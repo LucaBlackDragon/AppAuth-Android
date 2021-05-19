@@ -287,9 +287,7 @@ When a custom scheme is used, AppAuth can be easily configured to capture
 all redirects using this custom scheme through a manifest placeholder:
 
 ```groovy
-android.defaultConfig.manifestPlaceholders = [
-  'appAuthRedirectScheme': 'com.example.app'
-]
+android.defaultConfig.manifestPlaceholders['appAuthRedirectScheme'] = 'com.example.app'
 ```
 
 Alternatively, the redirect URI can be directly configured by adding an

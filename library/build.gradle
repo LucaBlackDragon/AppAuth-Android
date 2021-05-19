@@ -14,9 +14,7 @@ project.archivesBaseName = 'appauth'
 android.buildTypes {
     forTests {
         initWith debug
-        manifestPlaceholders = [
-            'appAuthRedirectScheme': 'net.openid.appauth.test'
-        ]
+        manifestPlaceholders['appAuthRedirectScheme'] = 'net.openid.appauth.test'
     }
 }
 
